@@ -2,10 +2,17 @@ import React from 'react';
 import marked from 'marked';
 
 
-const Post = ({ article }) => {
-    console.log(article)
+const Post = ({ article,input,include,setInclude }) => {
+    //console.log(article)
     const { recipeTitle, recipeCategory, recipePicture, recipeDescription, typicalRecipeLocation, recipeCountry } = article.fields
     const postRecipeDescription = marked(recipeDescription)
+
+    //setInclude(recipeTitle.includes(input));
+    //console.log(`Post if ${recipeTitle.includes(input)}`);
+    //console.log(`Post include ${include}`)
+
+   // if(recipeTitle.includes(input)) {
+
     return (
         <div className='post'>
             <h2 className='title'>{recipeTitle}</h2>
@@ -16,6 +23,7 @@ const Post = ({ article }) => {
             {/*<section>{typicalRecipeLocation}</section>*/}
         </div>
     )
+    //} else return <div></div>
 }
 
 Post.propTypes = {
