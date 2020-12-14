@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/returnofthecookbook/static/css/main.96d2fd41.chunk.css",
+    "main.js": "/returnofthecookbook/static/js/main.b857aabe.chunk.js",
+    "main.js.map": "/returnofthecookbook/static/js/main.b857aabe.chunk.js.map",
+    "runtime-main.js": "/returnofthecookbook/static/js/runtime-main.e29d3e4b.js",
+    "runtime-main.js.map": "/returnofthecookbook/static/js/runtime-main.e29d3e4b.js.map",
+    "static/js/2.9f07aa5f.chunk.js": "/returnofthecookbook/static/js/2.9f07aa5f.chunk.js",
+    "static/js/2.9f07aa5f.chunk.js.map": "/returnofthecookbook/static/js/2.9f07aa5f.chunk.js.map",
+    "index.html": "/returnofthecookbook/index.html",
+    "static/css/main.96d2fd41.chunk.css.map": "/returnofthecookbook/static/css/main.96d2fd41.chunk.css.map",
+    "static/js/2.9f07aa5f.chunk.js.LICENSE.txt": "/returnofthecookbook/static/js/2.9f07aa5f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/returnofthecookbook/static/media/mohammad-dadkhah-unsplash.7e638605.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e29d3e4b.js",
+    "static/js/2.9f07aa5f.chunk.js",
+    "static/css/main.96d2fd41.chunk.css",
+    "static/js/main.b857aabe.chunk.js"
+  ]
+}
