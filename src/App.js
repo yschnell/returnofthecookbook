@@ -1,36 +1,23 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './App.css';
 import { client } from './client';
 import Posts from './components/Posts';
 
-class App extends React.Component {
-  state = {
-      articles: []
-  }
-
-  componentDidMount() {
-      client.getEntries()
-      .then((response) => {
-          console.log(response)
-          this.setState({
-              articles: response.items
-          })
-      })
-      .catch(console.error)
-  }
-
-  /*useEffect(() => {
+ function App() {
+  
+  const [articles, setArticles] = useState([]);
+  
+ 
+  useEffect(() => {
     client
-      .getEntries({ content_type: cookbookRecipesG1 })
+      .getEntries()
       .then((res) => setArticles(res.items))
       .catch(() => console.log("Request failed"));
-  }, []);*/
+  }, []);
 
 
 
-
-  render() {
-    return (
+return (
       <div className="App">
         <div className='container'>
           <header>
@@ -40,13 +27,29 @@ class App extends React.Component {
           </header>
           <main>
           <div className='wrapper'>
-              <Posts posts={this.state.articles} />
+              <Posts posts={articles} />
           </div>
           </main>
         </div>
       </div>
     )
   };
-};
 
-  export default App;
+export default App;
+
+
+  /*class App extends React.Component {
+    state = {
+        articles: []
+    }
+  
+    componentDidMount() {
+        client.getEntries()
+        .then((response) => {
+            console.log(response)
+            this.setState({
+                articles: response.items
+            })
+        })
+        .catch(console.error)
+    }*/
