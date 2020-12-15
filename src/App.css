@@ -36,10 +36,25 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .picture { margin-bottom: 20px; }
 
 li { margin-bottom: 10px;}
 
+.App {
+  display: flex;
+  flex:1;
+
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.3);;
+}
+
+input {
+  margin:50px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    flex:1;
 }
 
 header {
@@ -69,8 +84,8 @@ main .wrapper {
 }
 
 .post {
-  padding: 20px;
-  margin-bottom: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
   background-color: rgb(230, 221, 243);
   box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
 
@@ -83,6 +98,14 @@ main .wrapper {
 
 .title {
   text-transform: uppercase;
-  font-size: 1.8em;
+  
   color: #2d1279;
+}
+
+li {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(230, 221, 243);
+  box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
+
 }

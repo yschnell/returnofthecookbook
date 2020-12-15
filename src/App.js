@@ -3,6 +3,7 @@ import './App.css';
 import { client } from './client';
 import Posts from './components/Posts';
 import Form from './components/Form';
+import { Switch, Route } from 'react-router-dom';
 
  function App() {
   
@@ -34,17 +35,19 @@ console.log(filtered)
 
 return (
       <div className="App">
+        <div className='container sidebar'>
+          <Form posts={articles} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput}/>
+          <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>
+        </div>
         <div className='container'>
-          <header>
-              <div className='wrapper'>
-                <span className='header-title'>THE RETURN OF THE COOKBOOK</span>
-              </div>
-          </header>
+         
           <main>
-          <div className='wrapper'>
-              <Form posts={articles} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput}/>
-              <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>
-          </div>
+            <div className='wrapper'>
+         {/* <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>*/}
+         <Switch>
+           <Route path="/:id" render= {() => "Hey"}/>
+         </Switch>
+            </div>
           </main>
         </div>
       </div>

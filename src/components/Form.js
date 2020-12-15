@@ -16,3 +16,4 @@ export default function Form({input,setInput,posts,setArticles,filtered,setFilte
 
     return <input onChange={onChangeHandler} value= {input}/>
 }
+
