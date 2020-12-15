@@ -36,20 +36,3 @@ return (
   };
 
 export default App;
-
-
-  /*class App extends React.Component {
-    state = {
-        articles: []
-    }
-  
-    componentDidMount() {
-        client.getEntries()
-        .then((response) => {
-            console.log(response)
-            this.setState({
-                articles: response.items
-            })
-        })
-        .catch(console.error)
-    }*/
