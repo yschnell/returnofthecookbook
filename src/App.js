@@ -32,7 +32,6 @@ import { Switch, Route } from 'react-router-dom';
 
 console.log(filtered)
 
-
 return (
       <div className="App">
         <div className='container1'>
