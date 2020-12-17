@@ -33,6 +33,7 @@ console.log(filtered)
 return (
       <div className="App">
         <div className='container1'>
+          <img className= "img" src={"./images/ramen_boat_1.gif"} alt="ramen" height="300" width="300"></img>
           <Form posts={posts} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput} category={category} setCategory= {setCategory} />
           <Posts posts={filtered===posts ? posts : filtered } input= {input} />
         </div>

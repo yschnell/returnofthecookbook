@@ -3,7 +3,7 @@ import marked from 'marked';
 import {Link, useParams} from 'react-router-dom';
 import {MapContainer,TileLayer} from 'react-leaflet';
 
-const Post = ({ posts}) => {
+const Post = ({ posts }) => {
 
     const {id} = useParams();
     //const [post, setPost] = useState(null);
