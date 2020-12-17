@@ -1,0 +1,10 @@
+.li:hover {
+    background-color: rgba(165, 124, 124, 0.829);
+    transition: color 200ms ease-out;
+}
+
+  
+.selected> li {
+    background-color:  rgba(165, 124, 124, 0.829);
+    color:whitesmoke;
+  }

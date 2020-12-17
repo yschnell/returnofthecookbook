@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import './App.css';
+import './components/Posts.css';
 import { client } from './client';
 import Posts from './components/Posts';
 import Post from './components/Post';
@@ -9,40 +10,37 @@ import { Switch, Route } from 'react-router-dom';
 
  function App() {
   
-  const [articles, setArticles] = useState([]);
+  const [posts, setPosts] = useState([]);
   const [filtered, setFiltered] = useState([]);
+  const [category, setCategory] = useState([]);
   const [input, setInput] = useState("");
-  const [include,setInclude] = useState(true);
+  
+
   
   useEffect(() => {
     client
       .getEntries()
-      .then((res) => {setArticles(res.items); setFiltered(res.items)} )
+      .then((res) => {
+        setPosts(res.items); 
+        setFiltered(res.items); 
+        setCategory(res.items)} )
       .catch(() => console.log("Request failed"));
   }, []);
 
- useEffect(()=> {
-   if(input==="") {
-    setInclude(true)
-   }
- }, [input] )
-
- console.log(`input: ${input}`);
- console.log(`include: ${include}`);
 
 console.log(filtered)
 
 return (
       <div className="App">
         <div className='container1'>
-          <Form posts={articles} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput}/>
-          <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>
+          <Form posts={posts} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput} category={category} setCategory= {setCategory} />
+          <Posts posts={filtered===posts ? posts : filtered } input= {input} />
         </div>
         <div className='container2'>
           <main>
             <div className='wrapper'>
               <Switch>
-                <Route path="/returnofthecookbook/:id" render= {() => <Post posts={articles}/>}/>
+                <Route path="/returnofthecookbook/:id" render= {() => <Post posts={posts}/>}/>
               </Switch>
            </div>
          </main>

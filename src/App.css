@@ -48,8 +48,14 @@ main {
   flex:4;
 }
 
+
+
+input,select {
+  margin: 10px;
+}
+
 input {
-  margin:50px;
+  margin-bottom: 30px;
 }
 
 .container1 {
@@ -130,12 +136,4 @@ li {
 }
 
 
-/*
-main {
-  background: rgb(36, 36, 36);
-  transition: all 600ms ease 0s;
-  overflow-y: scroll;
-  padding-top: 100px;
-  animation: 600ms ease 0s 1 normal none running container1;
-} */
 

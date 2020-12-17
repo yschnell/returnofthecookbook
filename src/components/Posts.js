@@ -1,9 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
+
+
 
 const Posts = ({posts}) => {
    
-return posts.map(post  =>  <li className="li"><Link to={`/returnofthecookbook/${post.sys.id}`} >{post.fields.recipeTitle}</Link></li>)
+return posts.map(post  =>  
+    <div className="sidebar__recipe">
+            <NavLink  style={{ textDecoration: 'none', color:"black" }} activeClassName="selected"  to={`/returnofthecookbook/${post.sys.id}`} >
+                <li className="li">{post.fields.recipeTitle}</li>
+            </NavLink>
+    </div> 
+ )
 }
 
 export default Posts
