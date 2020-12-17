@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Posts = ({posts,input,include,setInclude}) => {
    
     //if(include) {
-return posts.map(post  =>  <li><Link to={`/${post.sys.id}`} >{post.fields.recipeTitle}</Link></li>)
+return posts.map(post  =>  <li className="li"><Link to={`/${post.sys.id}`} >{post.fields.recipeTitle}</Link></li>)
 
     /*{article.fields.recipeTitle}*/
 
