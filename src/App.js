@@ -6,7 +6,7 @@ import Posts from './components/Posts';
 import Post from './components/Post';
 import Form from './components/Form';
 import { Switch, Route } from 'react-router-dom';
-/*import gif from './assets/ramen_boat_1.gif'*/
+import gif from './image/ramen.gif'
 
  function App() {
   
@@ -14,7 +14,7 @@ import { Switch, Route } from 'react-router-dom';
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState([]);
   const [input, setInput] = useState("");
-  
+
 
   
   useEffect(() => {
@@ -33,7 +33,7 @@ console.log(filtered)
 return (
       <div className="App">
         <div className='container1'>
-          <img className= "img" src={"./images/ramen_boat_1.gif"} alt="ramen" height="300" width="300"></img>
+          <img className= "img" src={gif} alt="ramen" height="100" width="100"></img>
           <Form posts={posts} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput} category={category} setCategory= {setCategory} />
           <Posts posts={filtered===posts ? posts : filtered } input= {input} />
         </div>

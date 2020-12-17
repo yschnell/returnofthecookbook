@@ -10,7 +10,7 @@ body {
   color: #455;
   line-height: 1.5;
   font-family: "Muli", sans-serif;
-  background-color: #FA8169;
+  background-color: #CCC5B9;
   /*background-image: url(./assets/ramen_boat_1.gif );*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +52,11 @@ main {
 
 input,select {
   margin: 10px;
+  background-color:  #FFFCF2;
 }
+
+
+
 
 input {
   margin-bottom: 30px;
@@ -63,20 +67,20 @@ input {
     flex-direction: column;
     min-height: 100vh;
     flex:1;
-   background-color:#F95738;
-   width:30%;
+   background-color:#252422;
+   width:15%;
 }
 
 .img {
   justify-content: center;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .container2 {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  flex:3;
+  flex:4;
 
 }
 
@@ -111,9 +115,9 @@ main .wrapper {
 .post {
   padding: 5px;
   margin-bottom: 10px;
-  background-color:#ebcaa5;
+  background-color:#FFFCF2;
   box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
-
+  transition: color 200ms ease-out;
 }
 
 .post img {
@@ -135,7 +139,7 @@ main .wrapper {
 li {
   padding: 5px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: FFFCF2;
   box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
   list-style: none;
 }

@@ -1,10 +1,13 @@
 .li:hover {
-    background-color: rgba(165, 124, 124, 0.829);
+    background-color: #EB5E28;
     transition: color 200ms ease-out;
 }
 
+.li {
+    background-color:  #FFFCF2;
+}
   
 .selected> li {
-    background-color:  rgba(165, 124, 124, 0.829);
-    color:whitesmoke;
+    background-color: #EB5E28;
+    color: #FFFCF2;
   }
