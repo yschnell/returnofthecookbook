@@ -1,12 +1,9 @@
 import React from 'react';
-import Post from './Post';
+import {Link} from 'react-router-dom'
 
 const Posts = ({posts}) => {
-    return (
-        <div>
-            {posts.map((article, index) => <Post article={article} key={index} />)}
-        </div>
-    )
+   
+return posts.map(post  =>  <li className="li"><Link to={`/returnofthecookbook/${post.sys.id}`} >{post.fields.recipeTitle}</Link></li>)
 }
 
 export default Posts

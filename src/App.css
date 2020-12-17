@@ -10,8 +10,8 @@ body {
   color: #455;
   line-height: 1.5;
   font-family: "Muli", sans-serif;
-  background-color: blueviolet;
-  background-image: url(./images/mohammad-dadkhah-unsplash.jpg);
+  background-color: black;
+  /*background-image: url(./assets/ramen_boat_1.gif );*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -36,11 +36,40 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .picture { margin-bottom: 20px; }
 
 li { margin-bottom: 10px;}
 
-.container {
+.App {
+  display: flex;
+}
+
+.sidebar {
+
+}
+
+main {
+  flex:4;
+}
+
+input {
+  margin:50px;
+}
+
+.container1 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    flex:1;
+   background-color: rgba(255, 255, 255, 0.3);
+   width:30%;
 }
+
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex:3;
+
+}
+
 
 header {
   height: 70px;
@@ -52,9 +81,10 @@ header {
 
 .wrapper {
     width: 100%;
-    max-width: 750px;
+    max-width: 80%;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
+    
 }
 
 .header-title {
@@ -69,20 +99,43 @@ main .wrapper {
 }
 
 .post {
-  padding: 20px;
-  margin-bottom: 50px;
-  background-color: rgb(230, 221, 243);
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color:white;
   box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
 
 }
 
 .post img {
       display: block;
-      width: 100%;
+      max-height: 100%;
+      max-height: 75%;
+      margin:0 auto;
+      height: 50%;
+       width: 50%;
 }
 
 .title {
   text-transform: uppercase;
-  font-size: 1.8em;
+  
   color: #2d1279;
 }
+
+li {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
+  list-style: none;
+}
+
+
+/*
+main {
+  background: rgb(36, 36, 36);
+  transition: all 600ms ease 0s;
+  overflow-y: scroll;
+  padding-top: 100px;
+  animation: 600ms ease 0s 1 normal none running container1;
+} */
+
