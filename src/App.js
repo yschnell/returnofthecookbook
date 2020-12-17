@@ -33,11 +33,14 @@ console.log(filtered)
 return (
       <div className="App">
         <div className='container1'>
+          <div className='imgHolder'>
           <img className= "img" src={gif} alt="ramen" height="100" width="100"></img>
+          </div>
           <Form posts={posts} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput} category={category} setCategory= {setCategory} />
           <Posts posts={filtered===posts ? posts : filtered } input= {input} />
         </div>
         <div className='container2'>
+        <div className='mainTitle'><h2>Return of the Cookbook</h2></div>
           <main>
             <div className='wrapper'>
               <Switch>

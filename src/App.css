@@ -144,5 +144,14 @@ li {
   list-style: none;
 }
 
+div.mainTitle {
+  text-align: center;
+  color:#fb6400
+}
+
+div.imgHolder {
+  padding: 15px;
+  align-self: center;
+}
 
 

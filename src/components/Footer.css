@@ -1,0 +1,24 @@
+div.main-footer {
+    background-color: #252422;
+}
+div.row {
+    display: flex;
+    padding: 5px;
+    color: rgb(224, 223, 223);  
+  }
+
+  .col {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  div.row-last {
+      text-align: center;
+      color: rgb(224, 223, 223) ;
+      padding: 10px;
+  }
+
+  h4.footer-h4 {
+      color: coral;
+  }
