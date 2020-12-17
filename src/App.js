@@ -14,8 +14,6 @@ import { Switch, Route } from 'react-router-dom';
   const [input, setInput] = useState("");
   const [include,setInclude] = useState(true);
   
-
-  
   useEffect(() => {
     client
       .getEntries()
@@ -37,24 +35,19 @@ console.log(filtered)
 
 return (
       <div className="App">
-
-   
-            <div className='container1'>
-              <Form posts={articles} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput}/>
-              <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>
-            </div>
-            <div className='container2'>
-                  <main>
-                    <div className='wrapper'>
-                      {/* <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>*/}
-                      <Switch>
-                        {/* <Route exact path="/"><img src={gif}/></Route> */}
-                        <Route path="/:id" render= {() => <Post posts={articles}/>}/>
-                      </Switch>
-                    </div>
-                  </main>
-            </div>
-            
+        <div className='container1'>
+          <Form posts={articles} filtered={filtered} setFiltered={setFiltered}  input= {input} setInput={setInput}/>
+          <Posts posts={filtered===articles ? articles : filtered } input= {input} include={include} setInclude={setInclude}/>
+        </div>
+        <div className='container2'>
+          <main>
+            <div className='wrapper'>
+              <Switch>
+                <Route path="/returnofthecookbook/:id" render= {() => <Post posts={articles}/>}/>
+              </Switch>
+           </div>
+         </main>
+        </div>    
       </div>
     )
   };
