@@ -1,13 +1,13 @@
 .li:hover {
-    background-color: #EB5E28;
+    background-color: #EEDEC5;
     transition: color 200ms ease-out;
 }
 
 .li {
-    background-color:  #FFFCF2;
+    background-color:  #EE634D;
 }
   
 .selected> li {
-    background-color: #EB5E28;
-    color: #FFFCF2;
+    background-color: #EEDEC5;
+    color: #212B34;
   }

@@ -24,7 +24,7 @@ export default function Form({input,setInput,posts,setFiltered,filtered,category
     } 
 
     return (
-    <div>
+    <div className="form">
         <select onChange={ onSelect}  name="meal" id="meal">
             <option value="" >Select Meal Category</option>
             <option  value="Breakfast">Breakfast</option>
